@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đức Thắng Form</title>
+	<meta charset="utf-8">
+	<meta lang="en">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="resign.js"></script>
+</head>
+<body>
+	<h1>Đức Thắng Courses</h1>
+	<h2> Registration From</h2>
+
+	<form id="resignform" method="post" action="confirm.html">
+		<fieldset>
+			<legend><h3>Personal informaition</h3></legend>
+			
+			<label for="firstname">Enter your firts name: </label>
+			<input type="text" id="firstname" name="First Name"/>
+			
+			<p><label for="lastname">Enter your last name: </label>
+			<input type="text" id="lastname" name="Last Name"/></p>
+			
+			<p><label for="Email">Enter your Email: </label>
+			<input type="text" id="Email" name="Your Email"/></p>
+			
+			<p><label for="phonenumber">Enter your phone number: </label>
+			<input type="text" id="phonenumber" name="Phone Number"/></p>
+			
+			<p><label for="age">Enter your age: </label>
+			<input type="text" id="age" name="Age"/></p>
+		</fieldset>
+
+		<fieldset id="radio_occupation">
+			<legend>Select your occupation</legend>
+			<p><label for="highschool">High School: </label>
+			<input type="radio" id="highschool" name="occupation" value="High School" /></p>
+			<p><label for="University">University: </label>
+			<input type="radio" id="University" name="occupation" value="University" /></p>
+			<p><label for="Working">Working: </label>
+			<input type="radio" id="Working" name="occupation" value="Working" /></p>
+			<p><label for="Retired">Retired: </label>
+			<input type="radio" id="Retired" name="occupation" value="Retired" /></p>
+
+		</fieldset>
+		<fieldset>
+			<legend>Select Courses</legend>
+			<p><label for="logicmath">Logic Math:</label>
+			<input type="checkbox" id="logicmath" name="logicmath" value="Selected" /></p>
+			<p><label for="Python">Python: </label>
+			<input type="checkbox" id="Python" name="Python" value="Selected" /></p>
+			<p><label for="web">Web Basic: </label>
+			<input type="checkbox" id="web" name="web" value="Selected" /></p>
+			<p><label for="gamepython">Game Python: </label>
+			<input type="checkbox" id="gamepython" name="gamepython" value="Selected" /></p>
+			<p><label for="datascience">Data Science Basic: </label>
+			<input type="checkbox" id="datascience" name="datascience" value="Selected" /></p>
+			<p><label for="ai">AI Basic: </label>
+			<input type="checkbox" id="ai" name="ai" value="Selected" /></p>
+		</fieldset>
+		<br/>
+		<label for="Payment">Payment method </label>
+		<select name="Payment" id="Payment">
+			<option value="none">Please select</option>
+			<option value="Paypal">Paypal</option>
+			<option value="creditcard">Credit Card</option>
+		</select>
+
+
+		<br/>
+		<br/>
+		<input type="submit" value="Pay now" />
+		<input type="reset" value="Reset" />
+	</form>
+
+
+</body>
+</html>
